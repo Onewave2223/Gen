@@ -55,16 +55,16 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Dice Roller",
+  title: "Dice Roller – Free Online Tool",
   description:
-    "Roll virtual dice online with custom dice counts and side numbers. Use standard presets from d4 to d100 and instantly see every roll and total.",
+    "Roll virtual dice online instantly. Roll one or many dice with custom sides or standard d4 to d100 presets and see every roll and total.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Dice Roller",
+    title: "Dice Roller – Free Online Tool",
     description:
-      "Roll virtual dice online with custom dice counts and side numbers. Use standard presets from d4 to d100 and instantly see every roll and total.",
+      "Roll virtual dice online instantly. Roll one or many dice with custom sides or standard d4 to d100 presets and see every roll and total.",
     url: PATH,
     siteName: siteConfig.name,
     locale: siteConfig.locale,

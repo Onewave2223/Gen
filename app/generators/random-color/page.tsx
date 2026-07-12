@@ -55,14 +55,14 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Random Color Generator",
+  title: "Random Color Generator – Free Online Tool",
   description:
     "Generate random colors instantly and copy their HEX, RGB, and HSL values for design, development, art, and creative projects.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Random Color Generator",
+    title: "Random Color Generator – Free Online Tool",
     description:
       "Generate random colors instantly and copy their HEX, RGB, and HSL values for design, development, art, and creative projects.",
     url: PATH,

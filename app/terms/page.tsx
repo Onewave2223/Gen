@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 const PATH = "/terms";
 const TITLE = "Terms of Use";
 const DESCRIPTION =
-  "Read the terms that apply when using GenHub and its free online generators and utility tools.";
+  "Read the terms that apply when using TryGenHub and its free online generators and utility tools.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -31,7 +31,7 @@ export default function TermsPage() {
           Terms of Use
         </h1>
         <p className="text-sm text-[var(--muted)]">
-          These terms apply when you use GenHub. They are written in
+          These terms apply when you use TryGenHub. They are written in
           plain language and are not a substitute for individual legal
           advice.
         </p>
@@ -42,7 +42,7 @@ export default function TermsPage() {
           1. Acceptance of terms
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          By using GenHub, you agree to these Terms of Use. If you do not
+          By using TryGenHub, you agree to these Terms of Use. If you do not
           agree with them, please do not use the website.
         </p>
       </section>
@@ -52,7 +52,7 @@ export default function TermsPage() {
           2. Description of the service
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          GenHub provides free, browser-based online generators and
+          TryGenHub provides free, browser-based online generators and
           utility tools, including random tools, a password generator,
           and naming tools for usernames, company names, and domain
           ideas.
@@ -64,7 +64,7 @@ export default function TermsPage() {
           3. Acceptable use
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          You agree to use GenHub only for lawful purposes and in a way
+          You agree to use TryGenHub only for lawful purposes and in a way
           that does not infringe the rights of, or restrict or inhibit
           the use and enjoyment of, the website by anyone else.
         </p>
@@ -75,7 +75,7 @@ export default function TermsPage() {
           4. Generated results
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          Results produced by GenHub&apos;s generators, such as numbers,
+          Results produced by TryGenHub&apos;s generators, such as numbers,
           passwords, colors, dates, emoji, usernames, company names, or
           domain ideas, are provided for your own evaluation and use. You
           are responsible for reviewing and deciding whether any
@@ -88,7 +88,7 @@ export default function TermsPage() {
           5. No guarantee of availability or suitability
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          GenHub does not guarantee that the website or any tool will be
+          TryGenHub does not guarantee that the website or any tool will be
           available at all times, free of errors, or suitable for any
           particular purpose.
         </p>
@@ -129,9 +129,9 @@ export default function TermsPage() {
           8. Intellectual property
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          The GenHub name, design, and website code are the property of
-          GenHub or its licensors, except where noted otherwise. Results
-          you generate using GenHub&apos;s tools are yours to use.
+          The TryGenHub name, design, and website code are the property of
+          TryGenHub or its licensors, except where noted otherwise. Results
+          you generate using TryGenHub&apos;s tools are yours to use.
         </p>
       </section>
 
@@ -140,7 +140,7 @@ export default function TermsPage() {
           9. Third-party services
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          GenHub&apos;s codebase includes optional support for Google
+          TryGenHub&apos;s codebase includes optional support for Google
           Analytics and Google AdSense. On a given deployment, each is
           only active if the site operator has configured it; otherwise
           it stays off. See the Privacy Policy for details on what
@@ -148,10 +148,10 @@ export default function TermsPage() {
         </p>
         <p className="text-sm text-[var(--muted)]">
           When advertising is displayed through Google AdSense,
-          advertisements are provided by third parties. GenHub does not
+          advertisements are provided by third parties. TryGenHub does not
           endorse, and is not responsible for, the content, products, or
           services of any advertiser, and an advertiser&apos;s
-          participation does not mean that advertiser endorses GenHub.
+          participation does not mean that advertiser endorses TryGenHub.
         </p>
       </section>
 
@@ -160,7 +160,7 @@ export default function TermsPage() {
           10. Service changes
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          GenHub may add, change, or remove tools and features over time
+          TryGenHub may add, change, or remove tools and features over time
           as the website continues to develop.
         </p>
       </section>
@@ -170,7 +170,7 @@ export default function TermsPage() {
           11. Disclaimer
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          GenHub and its tools are provided on an &quot;as is&quot; and
+          TryGenHub and its tools are provided on an &quot;as is&quot; and
           &quot;as available&quot; basis, without warranties of any kind,
           to the extent permitted by applicable law.
         </p>
@@ -181,7 +181,7 @@ export default function TermsPage() {
           12. Limitation of liability
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          To the extent permitted by applicable law, GenHub is not liable
+          To the extent permitted by applicable law, TryGenHub is not liable
           for any indirect, incidental, or consequential damages arising
           from your use of the website or its tools.
         </p>
@@ -193,7 +193,7 @@ export default function TermsPage() {
         </h2>
         <p className="text-sm text-[var(--muted)]">
           These Terms of Use may be updated from time to time. Continued
-          use of GenHub after an update means you accept the revised
+          use of TryGenHub after an update means you accept the revised
           terms.
         </p>
       </section>
@@ -203,7 +203,7 @@ export default function TermsPage() {
           14. Contact
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          To contact GenHub about these terms, use the{" "}
+          To contact TryGenHub about these terms, use the{" "}
           <Link
             href="/contact"
             className="font-medium text-[var(--foreground)] underline underline-offset-2 hover:text-[var(--primary)]"

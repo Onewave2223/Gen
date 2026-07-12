@@ -45,7 +45,7 @@ export function Footer() {
                 aria-hidden="true"
                 className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--primary)]"
               />
-              GenHub
+              TryGenHub
             </Link>
             <p className="max-w-xs text-sm text-[var(--muted)]">
               Free, fast, and easy-to-use online generators and random tools.
@@ -75,7 +75,7 @@ export function Footer() {
 
         <div className="mt-10 border-t border-[var(--border)] pt-6">
           <p className="text-sm text-[var(--muted)]">
-            © {year} GenHub. All rights reserved.
+            © {year} TryGenHub. All rights reserved.
           </p>
         </div>
       </div>

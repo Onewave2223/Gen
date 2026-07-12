@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site";
 const PATH = "/about";
 const TITLE = "About";
 const DESCRIPTION =
-  "Learn about GenHub, a collection of free online generators designed to make everyday random, creative, and naming tasks faster and easier.";
+  "Learn about TryGenHub, a collection of free online generators designed to make everyday random, creative, and naming tasks faster and easier.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -33,10 +33,10 @@ export default function AboutPage() {
     <div className="mx-auto flex max-w-3xl flex-col gap-10 px-4 py-10 sm:px-6 sm:py-14">
       <div className="flex flex-col gap-3">
         <h1 className="text-3xl font-bold tracking-tight text-[var(--foreground)]">
-          About GenHub
+          About TryGenHub
         </h1>
         <p className="max-w-xl text-base text-[var(--muted)]">
-          GenHub is a collection of free, browser-based online generators
+          TryGenHub is a collection of free, browser-based online generators
           and utility tools, built around a few simple ideas: keep each
           tool focused, keep the interface clear, and make useful results
           available in a click.
@@ -48,7 +48,7 @@ export default function AboutPage() {
           What you&apos;ll find here
         </h2>
         <p className="text-sm text-[var(--muted)]">
-          GenHub currently groups its tools into a few categories: random
+          TryGenHub currently groups its tools into a few categories: random
           tools for numbers, dice, coin flips, colors, dates, and emoji;
           a security-oriented tool for generating strong passwords; and
           creative naming tools for usernames, company names, and domain
@@ -94,7 +94,7 @@ export default function AboutPage() {
             <span className="font-medium text-[var(--foreground)]">
               No fake guarantees
             </span>{" "}
-            — GenHub does not claim availability, accuracy, or suitability
+            — TryGenHub does not claim availability, accuracy, or suitability
             it cannot back up, and does not present generated ideas as
             professional, legal, or security advice.
           </li>

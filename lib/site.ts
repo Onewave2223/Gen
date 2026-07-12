@@ -14,16 +14,16 @@ export interface SiteConfig {
 const DEFAULT_LOCAL_URL = "https://trygenhub.com";
 
 export const siteConfig: SiteConfig = {
-  name: "GenHub",
-  shortName: "GenHub",
+  name: "TryGenHub",
+  shortName: "TryGenHub",
   description:
-    "Free, fast, and easy-to-use online generators and random tools.",
+    "Free online generators and random tools. Generate random numbers, secure passwords, usernames, colors, dates, emojis, company names, domain names and more.",
   url: normalizeSiteUrl(
     process.env.NEXT_PUBLIC_SITE_URL ?? DEFAULT_LOCAL_URL,
   ),
   locale: "en_US",
   language: "en",
-  creator: "GenHub",
+  creator: "TryGenHub",
   keywords: [
     "online generators",
     "free generators",

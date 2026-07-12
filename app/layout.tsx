@@ -7,15 +7,15 @@ import { AdSenseScript } from "@/components/ads/AdSenseScript";
 import { absoluteUrl, isLocalSiteUrl, siteConfig } from "@/lib/site";
 import { env } from "@/lib/env";
 
-const DEFAULT_TITLE = "GenHub — Free Online Generators";
+const DEFAULT_TITLE = "Free Online Generators & Random Tools | TryGenHub";
 const DEFAULT_DESCRIPTION =
-  "Free, fast, browser-based online generators and utility tools. Generate random numbers, passwords, usernames, colors, dates, emojis, business names, and domain ideas.";
+  "Free online generators and random tools. Generate random numbers, secure passwords, usernames, colors, dates, emojis, company names, domain names and more.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: DEFAULT_TITLE,
-    template: "%s | GenHub",
+    template: "%s | TryGenHub",
   },
   description: DEFAULT_DESCRIPTION,
   applicationName: siteConfig.name,

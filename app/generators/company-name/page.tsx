@@ -55,14 +55,14 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Company Name Generator",
+  title: "Company Name Generator – Free Online Tool",
   description:
     "Generate company and business name ideas by industry and style for startups, creative projects, shops, services, and new ventures.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Company Name Generator",
+    title: "Company Name Generator – Free Online Tool",
     description:
       "Generate company and business name ideas by industry and style for startups, creative projects, shops, services, and new ventures.",
     url: PATH,

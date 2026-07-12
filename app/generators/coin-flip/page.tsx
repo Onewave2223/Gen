@@ -55,16 +55,16 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Coin Flip",
+  title: "Coin Flip – Free Online Tool",
   description:
-    "Flip a virtual coin once or up to 1,000 times. Instantly see heads, tails, counts, percentages, and copy your results.",
+    "Flip a coin online instantly. Flip a virtual coin once or up to 1,000 times and see heads, tails, counts, and percentages with our free tool.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Coin Flip",
+    title: "Coin Flip – Free Online Tool",
     description:
-      "Flip a virtual coin once or up to 1,000 times. Instantly see heads, tails, counts, percentages, and copy your results.",
+      "Flip a coin online instantly. Flip a virtual coin once or up to 1,000 times and see heads, tails, counts, and percentages with our free tool.",
     url: PATH,
     siteName: siteConfig.name,
     locale: siteConfig.locale,

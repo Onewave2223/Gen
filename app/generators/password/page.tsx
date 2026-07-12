@@ -34,9 +34,9 @@ const faqItems: FaqItem[] = [
       "Yes. Enabling Exclude similar characters removes 0, O, o, 1, l, and I from the character pool.",
   },
   {
-    question: "Does GenHub store my generated password?",
+    question: "Does TryGenHub store my generated password?",
     answer:
-      "This generator does not send generated passwords to a GenHub backend for storage. As with any website, review the site's privacy policy and your browser environment when handling sensitive information.",
+      "This generator does not send generated passwords to a TryGenHub backend for storage. As with any website, review the site's privacy policy and your browser environment when handling sensitive information.",
   },
   {
     question: "Should I reuse the same password?",
@@ -61,16 +61,16 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Password Generator",
+  title: "Secure Password Generator – Free Online Tool",
   description:
-    "Generate strong random passwords with custom length, uppercase and lowercase letters, numbers, symbols, and options to exclude similar characters.",
+    "Generate strong and secure random passwords instantly. Customize password length and characters with our free password generator.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Password Generator",
+    title: "Secure Password Generator – Free Online Tool",
     description:
-      "Generate strong random passwords with custom length, uppercase and lowercase letters, numbers, symbols, and options to exclude similar characters.",
+      "Generate strong and secure random passwords instantly. Customize password length and characters with our free password generator.",
     url: PATH,
     siteName: siteConfig.name,
     locale: siteConfig.locale,
@@ -127,7 +127,7 @@ export default function PasswordGeneratorPage() {
             produce secure random values, which are used to select
             characters from the character groups you enable. Generation
             happens entirely in your browser. The password is generated
-            in your browser by this tool and is not sent to a GenHub
+            in your browser by this tool and is not sent to a TryGenHub
             backend for generation.
           </p>
         </section>
@@ -192,11 +192,11 @@ export default function PasswordGeneratorPage() {
 
           <details className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--background)] p-4">
             <summary className="cursor-pointer text-sm font-medium text-[var(--foreground)]">
-              Does GenHub store my generated password?
+              Does TryGenHub store my generated password?
             </summary>
             <p className="mt-2 text-sm text-[var(--muted)]">
               This generator does not send generated passwords to a
-              GenHub backend for storage. As with any website, review the
+              TryGenHub backend for storage. As with any website, review the
               site&apos;s privacy policy and your browser environment when
               handling sensitive information.
             </p>

@@ -54,14 +54,14 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Random Emoji Generator",
+  title: "Random Emoji Generator – Free Online Tool",
   description:
     "Generate random emojis by category. Choose smileys, animals, food, activities, travel, objects, symbols, or mix them all.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Random Emoji Generator",
+    title: "Random Emoji Generator – Free Online Tool",
     description:
       "Generate random emojis by category. Choose smileys, animals, food, activities, travel, objects, symbols, or mix them all.",
     url: PATH,

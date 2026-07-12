@@ -29,7 +29,7 @@ const faqItems: FaqItem[] = [
       "Yes. Turn off Include numbers and the generator will not add number suffixes to any results.",
   },
   {
-    question: "Does GenHub check whether a username is available?",
+    question: "Does TryGenHub check whether a username is available?",
     answer:
       "No. This tool only generates ideas. Check availability directly on the platform you plan to use.",
   },
@@ -55,16 +55,16 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Username Generator",
+  title: "Username Generator – Free Online Tool",
   description:
-    "Generate creative username ideas for social profiles, gaming, communities, and online projects with custom keywords and styles.",
+    "Generate creative, unique username ideas instantly for social profiles, gaming, and online communities with custom keywords and styles.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Username Generator",
+    title: "Username Generator – Free Online Tool",
     description:
-      "Generate creative username ideas for social profiles, gaming, communities, and online projects with custom keywords and styles.",
+      "Generate creative, unique username ideas instantly for social profiles, gaming, and online communities with custom keywords and styles.",
     url: PATH,
     siteName: siteConfig.name,
     locale: siteConfig.locale,
@@ -157,7 +157,7 @@ export default function UsernameGeneratorPage() {
 
         <section className="flex flex-col gap-3">
           <h2 className="text-xl font-semibold text-[var(--foreground)]">
-            Can GenHub check username availability?
+            Can TryGenHub check username availability?
           </h2>
           <p className="text-sm text-[var(--muted)]">
             No. This generator creates username ideas locally in your
@@ -196,7 +196,7 @@ export default function UsernameGeneratorPage() {
 
           <details className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--background)] p-4">
             <summary className="cursor-pointer text-sm font-medium text-[var(--foreground)]">
-              Does GenHub check whether a username is available?
+              Does TryGenHub check whether a username is available?
             </summary>
             <p className="mt-2 text-sm text-[var(--muted)]">
               No. This tool only generates ideas. Check availability
