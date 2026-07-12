@@ -11,7 +11,7 @@ export interface SiteConfig {
   readonly keywords: readonly string[];
 }
 
-const DEFAULT_LOCAL_URL = "http://localhost:3000";
+const DEFAULT_LOCAL_URL = "https://trygenhub.com";
 
 export const siteConfig: SiteConfig = {
   name: "GenHub",
