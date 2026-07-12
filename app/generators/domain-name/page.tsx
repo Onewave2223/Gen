@@ -19,7 +19,7 @@ const SHORT_DESCRIPTION =
 
 const faqItems: FaqItem[] = [
   {
-    question: "Does GenHub check whether a domain is available?",
+    question: "Does TryGenHub check whether a domain is available?",
     answer:
       "No. This generator creates domain name ideas only. Always verify real availability with a domain registrar before making a decision.",
   },
@@ -55,14 +55,14 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Domain Name Generator",
+  title: "Domain Name Generator – Free Online Tool",
   description:
     "Generate domain name ideas from a keyword with brandable, short, keyword-focused, and creative naming styles across popular extensions.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Domain Name Generator",
+    title: "Domain Name Generator – Free Online Tool",
     description:
       "Generate domain name ideas from a keyword with brandable, short, keyword-focused, and creative naming styles across popular extensions.",
     url: PATH,
@@ -131,7 +131,7 @@ export default function DomainNameGeneratorPage() {
 
         <section className="flex flex-col gap-3">
           <h2 className="text-xl font-semibold text-[var(--foreground)]">
-            Does GenHub check domain availability?
+            Does TryGenHub check domain availability?
           </h2>
           <p className="text-sm text-[var(--muted)]">
             No. This tool generates domain name ideas locally in your
@@ -149,7 +149,7 @@ export default function DomainNameGeneratorPage() {
 
           <details className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--background)] p-4">
             <summary className="cursor-pointer text-sm font-medium text-[var(--foreground)]">
-              Does GenHub check whether a domain is available?
+              Does TryGenHub check whether a domain is available?
             </summary>
             <p className="mt-2 text-sm text-[var(--muted)]">
               No. This generator creates domain name ideas only. Always

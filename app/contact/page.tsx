@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 const PATH = "/contact";
 const TITLE = "Contact";
 const DESCRIPTION =
-  "Contact GenHub with questions, feedback, bug reports, or suggestions about the website and its online tools.";
+  "Contact TryGenHub with questions, feedback, bug reports, or suggestions about the website and its online tools.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -53,11 +53,11 @@ export default function ContactPage() {
     <div className="mx-auto flex max-w-3xl flex-col gap-8 px-4 py-10 sm:px-6 sm:py-14">
       <div className="flex flex-col gap-3">
         <h1 className="text-3xl font-bold tracking-tight text-[var(--foreground)]">
-          Contact GenHub
+          Contact TryGenHub
         </h1>
         <p className="max-w-xl text-base text-[var(--muted)]">
           A direct contact channel is being prepared and will be added
-          before GenHub&apos;s public production launch. In the meantime,
+          before TryGenHub&apos;s public production launch. In the meantime,
           here are the kinds of things you&apos;ll be able to reach out
           about.
         </p>
@@ -65,7 +65,7 @@ export default function ContactPage() {
 
       <section className="flex flex-col gap-4">
         <h2 className="text-xl font-semibold text-[var(--foreground)]">
-          What you can contact GenHub about
+          What you can contact TryGenHub about
         </h2>
         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {CONTACT_CATEGORIES.map((category) => (
@@ -93,7 +93,7 @@ export default function ContactPage() {
           >
             About page
           </Link>{" "}
-          to learn more about GenHub, or the{" "}
+          to learn more about TryGenHub, or the{" "}
           <Link
             href="/privacy"
             className="font-medium text-[var(--foreground)] underline underline-offset-2 hover:text-[var(--primary)]"
@@ -107,7 +107,7 @@ export default function ContactPage() {
           >
             Terms of Use
           </Link>{" "}
-          for more detail on how GenHub currently operates.
+          for more detail on how TryGenHub currently operates.
         </p>
       </section>
     </div>

@@ -54,16 +54,16 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Random Number Generator",
+  title: "Random Number Generator – Free Online Tool",
   description:
-    "Generate one or multiple random numbers within any custom range. Choose unique results, sort your numbers, and copy them instantly.",
+    "Generate random numbers instantly with our free online random number generator. Choose your minimum and maximum values and get a random result.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Random Number Generator",
+    title: "Random Number Generator – Free Online Tool",
     description:
-      "Generate one or multiple random numbers within any custom range. Choose unique results, sort your numbers, and copy them instantly.",
+      "Generate random numbers instantly with our free online random number generator. Choose your minimum and maximum values and get a random result.",
     url: PATH,
     siteName: siteConfig.name,
     locale: siteConfig.locale,

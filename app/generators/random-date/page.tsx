@@ -54,14 +54,14 @@ const schemas = [
 ];
 
 export const metadata: Metadata = {
-  title: "Random Date Generator",
+  title: "Random Date Generator – Free Online Tool",
   description:
     "Generate one or multiple random dates between two calendar dates. Choose unique results, sort dates, and copy them instantly.",
   alternates: {
     canonical: PATH,
   },
   openGraph: {
-    title: "Random Date Generator",
+    title: "Random Date Generator – Free Online Tool",
     description:
       "Generate one or multiple random dates between two calendar dates. Choose unique results, sort dates, and copy them instantly.",
     url: PATH,
