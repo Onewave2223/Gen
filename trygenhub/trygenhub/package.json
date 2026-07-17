@@ -1,0 +1,33 @@
+{
+  "name": "@workspace/trygenhub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p ${PORT:-5000}",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-5000}",
+    "lint": "eslint .",
+    "validate:questions": "tsx scripts/validate-questions.ts"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1",
+    "next": "^15.4.7",
+    "qrcode": "^1.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.2.0",
+    "@types/node": "22.10.5",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.17.0",
+    "eslint-config-next": "^15.4.7",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.17",
+    "tsx": "^4.23.1",
+    "typescript": "5.7.3"
+  }
+}

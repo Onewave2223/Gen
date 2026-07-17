@@ -8,6 +8,7 @@ import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import { AdSenseScript } from "@/components/ads/AdSenseScript";
 import { CookieConsent } from "@/components/consent/CookieConsent";
+import { ServiceWorkerRegister } from "@/components/pwa/ServiceWorkerRegister";
 import { absoluteUrl, isLocalSiteUrl, siteConfig } from "@/lib/site";
 import { env } from "@/lib/env";
 
@@ -134,6 +135,9 @@ export default function RootLayout({
         {/* AdSenseScript only loads when NEXT_PUBLIC_ADSENSE_CLIENT_ID
             is configured with a real publisher ID. */}
         <AdSenseScript />
+        {/* Enables PWA installability + basic offline support for
+            previously visited pages. See public/sw.js. */}
+        <ServiceWorkerRegister />
         {/* Cookie consent banner — shown on first visit or when the
             user requests to review their choice via "Cookie settings". */}
         <CookieConsent />

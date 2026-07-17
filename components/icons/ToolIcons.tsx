@@ -823,4 +823,16 @@ export const TOOL_ICON_MAP = {
   // IQ test
   "iq-test": BrainIcon,
   "test-na-iq": BrainIcon,
+
+  // AI name/text generators (EN + RU share the same ids)
+  "ai-username": SparkleIcon,
+  "ai-business-name": SparkleIcon,
+  "ai-domain-name": GlobeIcon,
+  "ai-fantasy-name": CrystalBallIcon,
+  "ai-character-name": MaskIcon,
+  "ai-pet-name": SmileyIcon,
+  "ai-team-name": TrophyIcon,
+  "ai-slogan": WordBubbleIcon,
+  "ai-instagram-caption": SparkleIcon,
+  "ai-random-question": QuestionBubbleIcon,
 } satisfies Record<string, (props: ToolIconProps) => React.ReactElement>;

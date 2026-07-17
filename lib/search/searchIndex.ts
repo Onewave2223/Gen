@@ -73,7 +73,7 @@ export const searchIndexEn: readonly SearchItem[] = [
     name: "Tarot Reading",
     description: "Explore the 78 Tarot cards and their meanings.",
     category: "Fortune",
-    href: "/tarot",
+    href: "/tarot/cards",
     keywords: ["tarot", "tarot cards", "tarot reading"],
   },
 ] as const;
@@ -117,7 +117,7 @@ export const searchIndexRu: readonly SearchItem[] = [
     name: "Таро",
     description: "78 карт Таро и их значения.",
     category: "Гадания",
-    href: "/ru/tarot",
+    href: "/ru/tarot/cards",
     keywords: ["таро", "карты таро", "гадание на таро"],
   },
 ] as const;

@@ -1,7 +1,19 @@
-"use client";
-
+import type { Metadata } from "next";
 import { FavoritesSection } from "@/components/home/FavoritesSection";
 import Link from "next/link";
+import { absoluteUrl } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Favorites",
+  description:
+    "Your saved generators and tools for quick access. Favorites are stored locally in your browser.",
+  alternates: {
+    canonical: absoluteUrl("/favorites"),
+  },
+  // Personalized, client-side (localStorage) content with no unique
+  // indexable value per visitor — keep it out of search results.
+  robots: { index: false, follow: true },
+};
 
 export default function FavoritesPage() {
   return (

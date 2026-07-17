@@ -1,7 +1,18 @@
-"use client";
-
+import type { Metadata } from "next";
 import { FavoritesSection } from "@/components/home/FavoritesSection";
 import Link from "next/link";
+import { absoluteUrl } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Избранное",
+  description:
+    "Ваши сохранённые генераторы и инструменты для быстрого доступа. Избранное хранится локально в браузере.",
+  alternates: {
+    canonical: absoluteUrl("/ru/favorites"),
+  },
+  // Персонализированный контент на основе localStorage — не индексируем.
+  robots: { index: false, follow: true },
+};
 
 export default function FavoritesPageRu() {
   return (
