@@ -63,6 +63,16 @@ const DEFAULT_GA_MEASUREMENT_ID = "G-7R07R4465S";
  */
 const DEFAULT_ADSENSE_CLIENT_ID = "ca-pub-8094929435378990";
 
+/**
+ * The site's real AdSense ad unit slot ID for the homepage placement
+ * (see `<AdSlot slot={env.adsenseSlotHome} />` in app/page.tsx). Like
+ * `DEFAULT_ADSENSE_CLIENT_ID` above, this is not a secret — slot IDs
+ * appear directly in the rendered page source — so it is safe to
+ * commit as a default. `NEXT_PUBLIC_ADSENSE_SLOT_HOME` can still
+ * override it.
+ */
+const DEFAULT_ADSENSE_SLOT_HOME = "9747695756";
+
 function toCleanString(value: string | undefined): string | undefined {
   const trimmed = value?.trim();
   return trimmed ? trimmed : undefined;
@@ -118,7 +128,9 @@ export const env: Env = {
   adsenseClientId: validateAdsenseClientId(
     process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ?? DEFAULT_ADSENSE_CLIENT_ID,
   ),
-  adsenseSlotHome: toCleanString(process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME),
+  adsenseSlotHome: toCleanString(
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME ?? DEFAULT_ADSENSE_SLOT_HOME,
+  ),
   adsenseSlotGenerator: toCleanString(
     process.env.NEXT_PUBLIC_ADSENSE_SLOT_GENERATOR,
   ),
