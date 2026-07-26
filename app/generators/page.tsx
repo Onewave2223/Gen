@@ -1,7 +1,9 @@
+import { Fragment } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { generators } from "@/data/generators";
 import { GeneratorCard } from "@/components/generators/GeneratorCard";
+import { InFeedAd } from "@/components/ads/InFeedAd";
 import { TOOL_ICON_MAP, SparkleIcon } from "@/components/icons/ToolIcons";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbListSchema, createWebApplicationSchema } from "@/lib/seo/schema";
@@ -71,18 +73,20 @@ export default function GeneratorsPage() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {availableGenerators.map((generator) => {
+        {availableGenerators.map((generator, index) => {
           const Icon = TOOL_ICON_MAP[generator.id as keyof typeof TOOL_ICON_MAP] ?? SparkleIcon;
           return (
-          <GeneratorCard
-            key={generator.id}
-            title={generator.name}
-            description={generator.shortDescription}
-            href={generator.href}
-            badge={generator.badge}
-            icon={<Icon className="h-6 w-6" />}
-            favoriteId={`generator:${generator.id}`}
-          />
+            <Fragment key={generator.id}>
+              <GeneratorCard
+                title={generator.name}
+                description={generator.shortDescription}
+                href={generator.href}
+                badge={generator.badge}
+                icon={<Icon className="h-6 w-6" />}
+                favoriteId={`generator:${generator.id}`}
+              />
+              {index === 5 && <InFeedAd />}
+            </Fragment>
           );
         })}
       </div>

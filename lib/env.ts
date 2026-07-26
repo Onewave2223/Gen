@@ -30,6 +30,10 @@ export interface Env {
   readonly adsenseSlotHome: string | undefined;
   /** Optional AdSense ad unit slot ID for generator page placements. */
   readonly adsenseSlotGenerator: string | undefined;
+  /** Optional AdSense in-feed native ad unit slot ID, for ads placed inside card grids/feeds. */
+  readonly adsenseSlotInFeed: string | undefined;
+  /** Optional AdSense in-feed native ad layout key, paired with adsenseSlotInFeed. */
+  readonly adsenseLayoutKeyInFeed: string | undefined;
   /** True only when running in a production build/runtime. */
   readonly isProduction: boolean;
 }
@@ -72,6 +76,23 @@ const DEFAULT_ADSENSE_CLIENT_ID = "ca-pub-8094929435378990";
  * override it.
  */
 const DEFAULT_ADSENSE_SLOT_HOME = "9747695756";
+
+/**
+ * The site's real AdSense in-feed native ad unit slot ID (see
+ * `<InFeedAd />`, used inside the generators/tools/calculators card
+ * grids). Like the other DEFAULT_ADSENSE_* constants above, this is a
+ * public identifier safe to commit. `NEXT_PUBLIC_ADSENSE_SLOT_IN_FEED`
+ * can still override it.
+ */
+const DEFAULT_ADSENSE_SLOT_IN_FEED = "2085542167";
+
+/**
+ * The matching `data-ad-layout-key` for `DEFAULT_ADSENSE_SLOT_IN_FEED`.
+ * Google generates this key per in-feed ad unit to control the native
+ * ad's internal layout; it is not a secret, just a layout descriptor.
+ * `NEXT_PUBLIC_ADSENSE_LAYOUT_KEY_IN_FEED` can still override it.
+ */
+const DEFAULT_ADSENSE_LAYOUT_KEY_IN_FEED = "-6t+ed+2i-1n-4w";
 
 function toCleanString(value: string | undefined): string | undefined {
   const trimmed = value?.trim();
@@ -133,6 +154,13 @@ export const env: Env = {
   ),
   adsenseSlotGenerator: toCleanString(
     process.env.NEXT_PUBLIC_ADSENSE_SLOT_GENERATOR,
+  ),
+  adsenseSlotInFeed: toCleanString(
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_IN_FEED ?? DEFAULT_ADSENSE_SLOT_IN_FEED,
+  ),
+  adsenseLayoutKeyInFeed: toCleanString(
+    process.env.NEXT_PUBLIC_ADSENSE_LAYOUT_KEY_IN_FEED ??
+      DEFAULT_ADSENSE_LAYOUT_KEY_IN_FEED,
   ),
   isProduction: process.env.NODE_ENV === "production",
 };

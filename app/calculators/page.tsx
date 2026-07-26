@@ -1,7 +1,9 @@
+import { Fragment } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { calculators } from "@/data/calculators";
 import { GeneratorCard } from "@/components/generators/GeneratorCard";
+import { InFeedAd } from "@/components/ads/InFeedAd";
 import { TOOL_ICON_MAP, SparkleIcon } from "@/components/icons/ToolIcons";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbListSchema, createWebApplicationSchema } from "@/lib/seo/schema";
@@ -69,17 +71,19 @@ export default function CalculatorsPage() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {calculators.map((calc) => {
+        {calculators.map((calc, index) => {
           const Icon = TOOL_ICON_MAP[calc.id as keyof typeof TOOL_ICON_MAP] ?? SparkleIcon;
           return (
-            <GeneratorCard
-              key={calc.id}
-              title={calc.name}
-              description={calc.shortDescription}
-              href={calc.href}
-              icon={<Icon className="h-6 w-6" />}
-              favoriteId={`calculator:${calc.id}`}
-            />
+            <Fragment key={calc.id}>
+              <GeneratorCard
+                title={calc.name}
+                description={calc.shortDescription}
+                href={calc.href}
+                icon={<Icon className="h-6 w-6" />}
+                favoriteId={`calculator:${calc.id}`}
+              />
+              {index === 2 && <InFeedAd />}
+            </Fragment>
           );
         })}
       </div>

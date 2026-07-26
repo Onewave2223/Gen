@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-export type AdSlotFormat = "auto" | "rectangle" | "horizontal";
+export type AdSlotFormat = "auto" | "rectangle" | "horizontal" | "fluid";
 
 export interface AdSlotProps {
   /** Real AdSense ad unit slot ID. Leave unset to keep this slot inactive. */
@@ -19,6 +19,13 @@ export interface AdSlotProps {
   className?: string;
   /** Visible label shown above the ad. Never use a misleading label. */
   label?: string;
+  /**
+   * Required for in-feed native ad units (format="fluid"). This is the
+   * `data-ad-layout-key` Google generates for a specific in-feed ad
+   * layout — it controls the native ad's internal proportions so it
+   * blends into the surrounding card grid.
+   */
+  layoutKey?: string;
 }
 
 /**
@@ -38,10 +45,16 @@ export function AdSlot({
   format = "auto",
   className,
   label = "Advertisement",
+  layoutKey,
 }: AdSlotProps) {
   const pushedRef = useRef(false);
+  // Fluid (in-feed) units require a layout key to render correctly, so
+  // treat a fluid slot missing its layout key as unconfigured.
   const isConfigured =
-    env.isProduction && Boolean(env.adsenseClientId) && Boolean(slot);
+    env.isProduction &&
+    Boolean(env.adsenseClientId) &&
+    Boolean(slot) &&
+    (format !== "fluid" || Boolean(layoutKey));
 
   useEffect(() => {
     if (!isConfigured || pushedRef.current) return;
@@ -68,7 +81,8 @@ export function AdSlot({
           data-ad-client={env.adsenseClientId}
           data-ad-slot={slot}
           data-ad-format={format}
-          data-full-width-responsive="true"
+          data-ad-layout-key={format === "fluid" ? layoutKey : undefined}
+          data-full-width-responsive={format === "fluid" ? undefined : "true"}
           aria-label="Advertisement"
         />
       </div>
